@@ -1,5 +1,5 @@
 import { Text, StyleSheet } from "react-native";
-import Colors from "../util/colors";
+import Colors from "../../util/colors";
 
 function Title(props) {
   return (
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: Colors.secondry500,
+    color: '#fff',
     textAlign: 'center',
     borderWidth: 2,
     borderColor: Colors.secondry500,
