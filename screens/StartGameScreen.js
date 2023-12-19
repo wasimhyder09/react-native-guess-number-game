@@ -35,7 +35,7 @@ function StartGameScreen(props) {
     <View style={styles.rootContainer}>
       <Title>Guess My Number</Title>
       <Card>
-        <InstructionText>Enter a number</InstructionText>
+        <InstructionText>Enter a Number</InstructionText>
         <TextInput
           style={styles.input}
           maxLength={2}
