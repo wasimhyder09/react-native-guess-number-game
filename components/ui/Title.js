@@ -1,4 +1,4 @@
-import { Text, StyleSheet } from "react-native";
+import { Text, StyleSheet, Platform } from "react-native";
 import Colors from "../../util/colors";
 
 function Title(props) {
@@ -15,7 +15,9 @@ const styles = StyleSheet.create({
     fontSize: 24,
     color: '#fff',
     textAlign: 'center',
-    borderWidth: 2,
+    // borderWidth: Platform.OS === 'android' ? 2 : 0,
+    //There is an alternate way to implement above logic
+    borderWidth: Platform.select({ android: 2, ios: 0 }),
     borderColor: Colors.secondry500,
     padding: 12,
     maxWidth: '80%',
